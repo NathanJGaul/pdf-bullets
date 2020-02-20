@@ -61,10 +61,10 @@ class AbbrTools extends React.PureComponent{
                 <button className="button" onClick={this.inputClick}>Import Abbrs</button>
                 <button className="button" onClick={this.exportToXLS}>Export Abbrs</button>
                 <button className="button" onClick={() => {
-                    if(confirm("Are you sure you want to remove all existing acronyms and replace with a common list?")){
+                    if(confirm("Are you sure you want to remove all existing acronyms and replace with the 55 WG approved list?")){
                         this.importSampleAbbrs();
                     }
-                }}>Load Common Abbrs</button>
+                }}>Load 55 WG Abbrs</button>
             </div>
         );
     }
@@ -113,3 +113,4 @@ class AbbrsViewer extends React.PureComponent {
         );
     }
 }
+this.importSampleAbbrs();
